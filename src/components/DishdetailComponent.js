@@ -57,12 +57,14 @@ class Dishdetail extends Component {
     render() {
         
         return (
+          <div className="container">
                 <div className="row">
                 <div  className="col-12 col-md-5 m-1">
-                {this.renderDish(this.props.dishselect)}
+                {this.renderDish(this.props.dish)}
                 </div>
                <div  className="col-12 col-md-5 m-1">
-               {this.renderDishComment(this.props.dishselect)}
+               {this.renderDishComment(this.props.dish)}
+               </div>
                </div>
                </div>
         );
